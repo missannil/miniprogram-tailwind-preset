@@ -5,3 +5,4 @@ node_modules
 **/*.map
 .eslintcache  
 !ewm.config.js
+project.private.config.json

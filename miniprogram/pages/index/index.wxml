@@ -1,0 +1,4 @@
+<page>
+	<top_nav title="{{topNav_title}}" />
+	<view class="w-100">w-100</view>
+</page>

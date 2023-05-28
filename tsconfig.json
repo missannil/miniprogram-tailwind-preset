@@ -1,48 +1,47 @@
 {
-    "compilerOptions": {
-        "strictPropertyInitialization": true,
-        "lib": [
-            "ES2022"
-        ],
-        "target": "ES2022",
-        "module": "ES2022",
-        "strict": true, //  alwaysStrict,strictNullChecks,strictBindCallApply,strictFunctionTypes,strictPropertyInitialization,noImplicitAny,noImplicitThis,useUnknownInCatchVariables
-        "strictFunctionTypes": false, //e: Dataset<{ id: string }>会报错。
-        "exactOptionalPropertyTypes": true, //带有?标志的属性类型不在包含undefined 
-        "skipLibCheck": true, //跳过声明文件的类型检查(.d.ts),除了你引用的。
-        "moduleResolution": "node", //模块解析策略 //5.0 新值 bundler
-        "noImplicitAny": true, //不允许隐式的any类型
-        "esModuleInterop": true,
-        "noEmit": true,
-        "watch": true,
-        "diagnostics": true,
-        "removeComments": true, //去除注释
-        // // "experimentalDecorators": true,//实验性质的装饰器
-        "noImplicitReturns": true, //隐式函数返回
-        // "resolveJsonModule": true, //import settings from "./settings.json";
-        "forceConsistentCasingInFileNames": true, //区分文件名的大小写
-        "noUnusedLocals": false, // 报告未使用局部变量的错误
-        "noUnusedParameters": false, //报告函数中未使用参数的错误
-        "sourceMap": true,
-        "isolatedModules": true, //独立模块(必须有导入或导出) 默认false
-        "useUnknownInCatchVariables": true, //catch 子句 err为unknown 可以显示指定类型 4.4 --strict
-        "verbatimModuleSyntax": true,//5.0特性
-        // "importsNotUsedAsValues":"remove",
-        // "noEmitOnError": true, // 错误情况下不编译 开启会导致wtach下报错
-        "noFallthroughCasesInSwitch": true, //报告switch语句中漏接情况的错误
-        //指定加载包的路径,默认加载所有@types下的包
-        // "typeRoots": [ //要加载声明文件(包)的根目录(所有包都会被加载) 默认所有"node_modules/@types"
-        //     "node_modules/@types",
-        //     "node_modules",
-        // ],
-        // "types": [ //指定根目录下要加载声明文件的包
-        //     "node",
-        //     "jest",
-        //     "missannil-api-typings",
-        // ] //指定加载typeRoots配置路径下的哪些包
-    },
-    "include": [
-        "**/*.ts",
+  "compilerOptions": {
+    "strictPropertyInitialization": true,
+    "lib": [
+      "ES2022"
     ],
-
+    "target": "ES2022",
+    "module": "ES2022",
+    "strict": true, //  alwaysStrict,strictNullChecks,strictBindCallApply,strictFunctionTypes,strictPropertyInitialization,noImplicitAny,noImplicitThis,useUnknownInCatchVariables
+    "strictFunctionTypes": false, //e: Dataset<{ id: string }>会报错。
+    "exactOptionalPropertyTypes": true, //带有?标志的属性类型不在包含undefined 
+    "skipLibCheck": true, //跳过声明文件的类型检查(.d.ts),除了你引用的。
+    "moduleResolution": "node", //模块解析策略 //5.0 新值 bundler
+    "noImplicitAny": true, //不允许隐式的any类型
+    "esModuleInterop": true,
+    "noEmit": true,
+    "watch": true,
+    "diagnostics": true,
+    "removeComments": true, //去除注释
+    // // "experimentalDecorators": true,//实验性质的装饰器
+    "noImplicitReturns": true, //隐式函数返回
+    // "resolveJsonModule": true, //import settings from "./settings.json";
+    "forceConsistentCasingInFileNames": true, //区分文件名的大小写
+    "noUnusedLocals": false, // 报告未使用局部变量的错误
+    "noUnusedParameters": false, //报告函数中未使用参数的错误
+    "sourceMap": true,
+    "isolatedModules": true, //独立模块(必须有导入或导出) 默认false
+    "useUnknownInCatchVariables": true, //catch 子句 err为unknown 可以显示指定类型 4.4 --strict
+    "verbatimModuleSyntax": true, //5.0特性
+    // "importsNotUsedAsValues":"remove",
+    // "noEmitOnError": true, // 错误情况下不编译 开启会导致wtach下报错
+    "noFallthroughCasesInSwitch": true, //报告switch语句中漏接情况的错误
+    //指定加载包的路径,默认加载所有@types下的包
+    "typeRoots": [ //要加载声明文件(包)的根目录(所有包都会被加载) 默认所有"node_modules/@types"
+      "node_modules/@types",
+      "node_modules",
+    ],
+    "types": [ //指定根目录下要加载声明文件的包
+      "missannil-api-typings",
+    ] //指定加载typeRoots配置路径下的哪些包
+  },
+  "include": [
+    "**/*.ts",
+    "miniprogram/app.ts", "../../wxappUnpacker-master/1111/colors.ts",
+  ],
+  "exclude": []
 }
