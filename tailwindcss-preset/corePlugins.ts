@@ -3,15 +3,17 @@ import type { CorePluginList } from "tailwindcss/types/generated/corePluginList"
 export const corePlugins: CorePluginList[] = [
 	"width", 
 	"height", 
+	"display",
+	"flex",
+	'flexShrink',
+	'flexGrow',
+	'flexBasis',
+	'flexDirection',
+	'flexWrap',
 	// "alignContent",
 	// "alignItems",
 	// "alignSelf",
 	// "backgroundColor",
-	// "flex",
-	// "flexDirection",
-	// "flexGrow",
-	// "flexShrink",
-	// "flexWrap",
 	// "display",
 	// "padding", // 关联 spacing
 	// "margin", // 关联 spacing
