@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.0](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.1.3...v0.2.0) (2023-05-29)
+
+
+### Features
+
+* font相关主题 ([774d31d](https://github.com/missannil/miniprogram-tailwind-preset/commit/774d31df1d5915b390f6f0a6a2917b7ab9474137))
+* 加入display和flex相关主题 ([d800221](https://github.com/missannil/miniprogram-tailwind-preset/commit/d800221955170be8630755d8eeb6bff7ad65c742))
+
 ## [0.1.3](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.1.2...v0.1.3) (2023-05-29)
 
 
