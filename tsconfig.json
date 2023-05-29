@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"lib": ["ESNext"],
-		"target": "ES6",
+		"target": "ES2022",
 		"module": "ESNext",
 		"strict": true,
 		"exactOptionalPropertyTypes": true,
@@ -15,8 +15,6 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"verbatimModuleSyntax": true, //5.0模块特性,任何没有类型修饰符的导入或导出都会被保留。任何使用类型修饰符的内容都将被完全删除
-		"typeRoots": ["node_modules"],
-		"types": ["missannil-api-typings"]
 	},
-	"include": ["./index.ts"]
+	"include": ["./index.ts"],
 }

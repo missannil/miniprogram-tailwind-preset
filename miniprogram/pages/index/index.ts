@@ -11,7 +11,6 @@ const top_nav = SubComponent<Main,$TopNav>()({
 
 const mainComponent = MainComponent({
   isPage: true,
-  
 })
 
 const index = DefineComponent({

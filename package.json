@@ -1,30 +1,32 @@
 {
-  "name": "miniprogram-tailwind-preset",
-  "version": "0.2.0",
-  "description": "tailwindcss在微信小程序中使用时的预设文件",
-  "main": "index.js",
-  "scripts": {
-    "prepare": "husky install",
-    "tw": "tailwind  -o ./miniprogram/tailwind.wxss --watch",
-    "build":"tsc"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@commitlint/config-conventional": "^17.6.3",
-    "commitlint": "^17.6.3",
-    "ewm": "^0.17.3-dev.202304270",
-    "husky": "^8.0.3",
-    "missannil-api-typings": "^3.9.1",
-    "tailwindcss": "^3.3.2",
-    "typescript": "^5.0.4"
-  },
-  "files": [
-    "README.md",
-    "CHANGELOG.md",
-    "tailwindcss-preset/",
-    "index.ts",
-    "index.js"
-  ]
+	"name": "miniprogram-tailwind-preset",
+	"version": "0.2.0",
+	"description": "tailwindcss在微信小程序中使用时的预设文件",
+	"main": "index.js",
+	"scripts": {
+		"prepare": "husky install",
+		"tw": "tailwind  -o ./miniprogram/tailwind.wxss --watch",
+		"build": "tsc"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"tailwindcss": "^3.3.2"
+	},
+	"devDependencies": {
+		"@commitlint/config-conventional": "^17.6.3",
+		"commitlint": "^17.6.3",
+		"ewm": "^0.17.3-dev.202304270",
+		"husky": "^8.0.3",
+		"missannil-api-typings": "^3.9.1",
+		"typescript": "^5.0.4"
+	},
+	"files": [
+		"README.md",
+		"CHANGELOG.md",
+		"tailwindcss-preset/",
+		"index.ts",
+		"index.js"
+	]
 }
