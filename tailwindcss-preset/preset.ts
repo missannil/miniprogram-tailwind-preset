@@ -5,6 +5,7 @@ import { percents } from './theme/percents';
 import { spacing } from './theme/spacing';
 import { width } from './theme/width';
 import { baseStyle } from './plugins/baseStyle';
+import { fontSize } from './theme/fontSize';
 
 export const preset: Config = {
 	content: [],
@@ -14,6 +15,7 @@ export const preset: Config = {
 		spacing,
 		width,
 		height,
+		fontSize,
 	},
 	plugins: [baseStyle],
 };

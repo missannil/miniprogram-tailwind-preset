@@ -10,22 +10,22 @@ export const corePlugins: CorePluginList[] = [
 	'flexBasis',
 	'flexDirection',
 	'flexWrap',
+	"padding", 
+	"margin", 
+	"overflow",
+	"fontSize", 
+	"fontStyle",
+	'fontWeight',
+	"fontSmoothing",
+	// "fontVariantNumeric"//有*号
 	// "alignContent",
 	// "alignItems",
 	// "alignSelf",
 	// "backgroundColor",
 	// "display",
-	// "padding", // 关联 spacing
-	// "margin", // 关联 spacing
-	// "overflow",
-	// "fontSize", // 关联 spacing
-	// "fontStyle",
+
 	// "textColor", // 关联 colors
 	// "textAlign",
-	// "fontFamily",
-	// "fontSmoothing",
-	// "fontVariantNumeric", // addDefaults
-	// "fontWeight",
 	// "animation",
 	// "maxWidth",
 	// "minWidth"
