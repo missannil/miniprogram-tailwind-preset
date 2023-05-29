@@ -1,15 +1,1 @@
-/* @import "./tailwind.wxss";
-view {
-  color:white
-}
-.w-100 {
-  color: blue;
-} */
-
-view {
-	box-sizing: border-box;
-}
-
-.w-100 {
-	width: 100rpx;
-}
+ @import "./tailwind.wxss";

@@ -1,4 +1,10 @@
 <page>
-	<top_nav title="{{topNav_title}}" />
-	<view class="w-100">w-100</view>
+  <top_nav title="{{topNav_title}}" />
+  <view class="w-100 " style="border:2rpx solid red;margin: 20rpx auto;;">w-100</view>
+  <view class="w-200 h-50" style="border:2rpx solid red; margin: 20rpx auto;text-align: center;">w-200 h-50</view>
+  <view class="w-1F3 h-5vw" style="border:2rpx solid red;margin: 20rpx auto;text-align: center;">w-1F3 h-5vw</view>
+  <view class="w-1F2 h-10vw" style="border:2rpx solid red;margin: 20rpx auto;text-align: center;line-height: 10vw;">
+    w-1F2 h-10vw</view>
+  <view class="w-full h-10vh" style="border:2rpx solid red;margin: 20rpx auto;text-align: center;line-height: 10vh;">
+    w-full h-10vh</view>
 </page>
