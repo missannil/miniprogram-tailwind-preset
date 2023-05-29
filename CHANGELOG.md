@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.1.1...v0.1.2) (2023-05-29)
+
+
+### Bug Fixes
+
+* readme ([5ffe946](https://github.com/missannil/miniprogram-tailwind-preset/commit/5ffe946ddbfe956a00a40744787f55091fcfda08))
+
 ## [0.1.1](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.1.0...v0.1.1) (2023-05-29)
 
 
