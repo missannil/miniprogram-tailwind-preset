@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.1.2...v0.1.3) (2023-05-29)
+
+
+### Bug Fixes
+
+* husky no found ([8dbc18c](https://github.com/missannil/miniprogram-tailwind-preset/commit/8dbc18c01546ca16e75b4fe432a585ce6fa50af0))
+
 ## [0.1.2](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.1.1...v0.1.2) (2023-05-29)
 
 
