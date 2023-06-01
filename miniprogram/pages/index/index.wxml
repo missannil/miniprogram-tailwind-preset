@@ -1,69 +1,31 @@
 <page>
 	<top_nav title="{{topNav_title}}" />
-	<view style="text-align: center;font-weight: bolder;">width和height主题</view>
+	<view class="w-150 common center">w-100</view>
+	<view class="w-200 h-50 common center">w-200 h-50</view>
+	<view class="w-1F3 h-6vw common center">w-1F3 h-6vw</view>
+	<view class="w-1F2 h-10vw common center">w-1F2 h-10vw</view>
 	<view
-		class="w-100"
-		style="border:2rpx solid red;margin: 20rpx auto;;"
-	>w-100</view>
-	<view
-		class="w-200 h-50"
-		style="border:2rpx solid red; margin: 20rpx auto;text-align: center;"
-	>w-200 h-50</view>
-	<view
-		class="w-1F3 h-5vw"
-		style="border:2rpx solid red;margin: 20rpx auto;text-align: center;"
-	>w-1F3 h-5vw</view>
-	<view
-		class="w-1F2 h-10vw"
-		style="border:2rpx solid red;margin: 20rpx auto;text-align: center;line-height: 10vw;"
-	>w-1F2 h-10vw</view>
-	<view
-		class="w-full h-10vh"
-		style="border:2rpx solid red;margin: 20rpx auto;text-align: center;line-height: 10vh;"
+		class="w-full h-10vh common center text-striking border-primary-light caret-primary"
 	>w-full h-10vh</view>
 
-	<view style="text-align: center;font-weight: bolder;">flex主题</view>
-	<!-- flex 属于display主题 -->
-	<view class="flex">
-		<view
-			class="flex-none"
-			style="width:200rpx;border:2rpx solid red;margin: 20rpx auto;text-align: center;"
-		>flex-none</view>
-		<view
-			class="flex-1"
-			style="border:2rpx solid red;margin: 20rpx auto;text-align: center;"
-		>flex-1</view>
-	</view>
-	<view style="text-align: center;font-weight: bolder;">padding主题</view>
-	<view
-		class="p-50"
-		style="width: 200rpx;height:200rpx;  border:2rpx solid red;margin: 20rpx auto;text-align: center;"
-	>
-		<view style="background-color: red;height: 96rpx;line-height: 96rpx;">p-50</view>
-	</view>
-	<view style="text-align: center;font-weight: bolder;">margin主题</view>
-	<view
-		style="width: 200rpx;height:82rpx;background-color: red;text-align: center; overflow: hidden;margin: 20rpx auto;text-align: center;"
-	>
-		<view
-			class="m-20"
-			style="background-color: white;"
-		>m-20</view>
-	</view>
-	<view style="text-align: center;font-weight: bolder;">overflow主题</view>
-	<view
-		class="overflow-hidden"
-		style="width: 380rpx;background-color:red;white-space: nowrap;margin: 20rpx auto;text-align: center;"
-	>overflow-hidden 超出隐藏</view>
+	<input
+		class="text-striking caret-primary common"
+		placeholder="caret-primary "
+	></input>
+    
+	<view class=" rotate  table-cell saturate-50 origin-bottom-right   bg-primary-darkest   w-200 h-200  rounded-1F2 stacked-fractions align-middle break-keep ring-2 center" placeholder="测试">123321</view>
 
-	<view style="text-align: center;font-weight: bolder;">fontSize、FontStyle、fontWeight主题</view>
-	<view
-		class="text-40 italic font-bold"
-		style="width: 700rpx;height:60rpx;line-height: 60rpx;  border:2rpx solid red;margin: 20rpx auto;text-align: center;"
-	>text-40 & italic & font-bold</view>
-	<view style="text-align: center;font-weight: bolder;" >fontSmoothing主题</view>
-	<view
-		class="antialiased"
-		style="width: 700rpx;height:60rpx;line-height: 60rpx;  border:2rpx solid red;margin: 20rpx auto;text-align: center;"
-	>antialiased字体平滑</view>
+	<view class=" grid     gap-10 col-span-3 ">
+		<view class="bg-primary border-2 w-100 h-100 ">0</view>
+		<view class="bg-primary border-2 w-100 h-100">1</view>
+		<view class="bg-primary border-2 w-100 h-100">2</view>
+		<view class="bg-primary border-2 w-100 h-100">3</view>
+		<view class="bg-primary border-2 w-100 h-100">4</view>
+		<view class="bg-primary border-2 w-100 h-100">5</view>
+		<view class="bg-primary border-2 w-100 h-100">6</view>
+		<view class="bg-primary border-2 w-100 h-100">7</view>
+		<view class="bg-primary border-2 w-100 h-100">8</view>
+		<view class="bg-primary border-2 w-100 h-100">9</view>
+
+	</view>
 </page>
