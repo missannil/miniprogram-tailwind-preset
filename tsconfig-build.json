@@ -9,12 +9,13 @@
 		"moduleResolution": "bundler",
 		"esModuleInterop": true,
 		"diagnostics": true,
+		"declaration": true,
 		"removeComments": true,
 		"noImplicitReturns": true,
 		"forceConsistentCasingInFileNames": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"verbatimModuleSyntax": true,//5.0模块特性,任何没有类型修饰符的导入或导出都会被保留。任何使用类型修饰符的内容都将被完全删除
-		"types": ["./node_modules/missannil-api-typings"]
+		"verbatimModuleSyntax": true,
 	},
+	"include": ["index.ts"]
 }

@@ -1,164 +1,159 @@
-import type { CorePluginList } from "tailwindcss/types/generated/corePluginList";
+import type { CorePluginList } from 'tailwindcss/types/generated/corePluginList';
 
 export const corePlugins: CorePluginList[] = [
-	"width", 
-	"height", 
-	"display",
-	"flex",
+	/**
+	 * 自定义plugin取代的
+	 */
+	// 'backgroundColor',//匹配颜色方案
+	// 'borderColor',//匹配颜色方案
+	// 'textColor',//匹配颜色方案
+	// 'caretColor',//匹配颜色方案
+	// "fill", //匹配颜色方案
+	// "boxShadow",//带*号
+	// "gradientColorStops",//带*号
+	// "transform",// 带*号
+	// "ringWidth",//带*号
+	// "fontVariantNumeric",// 带*号
+	/**
+	 * 正常兼容小程序的
+	 */
+	//--------主题(配置)被修改开始---------
+	'width',
+	'height',
+	'flexBasis',
+	'fontSize',
+	'borderWidth',
+	'borderRadius',
+	'stroke',
+	'skew',
+	'rotate',
+	'ringColor',
+	'ringOffsetColor',
+	'ringOffsetWidth',
+	'lineHeight',
+	'backdropBlur',
+	'inset',
+	'translate',
+	'blur',
+	'maxHeight',
+	'maxWidth',
+	'minHeight',
+	'minWidth',
+	'placeholderColor', //小程序暂不支持::placeholder选择器,但不报错,预留着
+	//--------主题配置被修改结束---------
+	'display',
+	'flex',
 	'flexShrink',
 	'flexGrow',
-	'flexBasis',
 	'flexDirection',
 	'flexWrap',
-	"padding", 
-	"margin", 
-	"overflow",
-	"fontSize", 
-	"fontStyle",
+	'justifyContent',
+	'justifyItems',
+	'justifySelf',
+	'padding',
+	'margin',
+	'overflow',
+	'fontStyle',
 	'fontWeight',
-	"fontSmoothing",
-	// "fontVariantNumeric"//有*号
-	// "alignContent",
-	// "alignItems",
-	// "alignSelf",
-	// "backgroundColor",
-	// "display",
-
-	// "textColor", // 关联 colors
-	// "textAlign",
-	// "animation",
-	// "maxWidth",
-	// "minWidth"
-	// "preflight", //
-	// "container", //out
-	// "accessibility", //out 无障碍
-	// "appearance", //out
-	// "translate", // 间距`.` 有 特殊字符 `\/`
-	// "animation",
-	// "backdropBlur", // backdrop-filter: blur(0);
-	// "backdropBrightness",
-	// "backdropContrast",
-	// "backdropFilter",//addDefaults
-	// "backdropGrayscale",
-	// "backdropHueRotate",
-	// "backdropInvert",
-	// "backdropOpacity",
-	// "backdropSaturate",
-	// "backdropSepia",
-	// "backgroundAttachment",
-	// "backgroundBlendMode",
-	// "backgroundClip",
-	// "backgroundImage",
-	// "backgroundOpacity",
-	// "backgroundOrigin",
-	// "backgroundPosition",
-	// "backgroundRepeat",
-	// "backgroundSize",
-	// "blur",
-	// "borderCollapse",
-	// "borderColor",
-	// "borderOpacity",
-	// "borderRadius",
-	// "borderStyle",
-	// 'borderWidth', // customBorderWidth
-	// "boxDecorationBreak",
-	// "boxShadow", //addDefaults
-	// "boxSizing",
-	// "brightness",
-	// "caretColor", // 光标颜色
-	// "clear", // 清楚浮动
-	// "content",
-	// "contrast",
-	// "cursor",
-
-	// "divideColor"	  , // out 会产生not 小程序不认识错误 不支持 :not 选择器
-	// "divideOpacity" ,// out 会产生not 小程序不认识错误 不支持 :not 选择器
-	// "divideStyle"   ,// out 会产生not 小程序不认识错误 不支持 :not 选择器
-	// "divideWidth"	  , // out 会产生not 小程序不认识错误 不支持 :not 选择器
-	// "dropShadow",
-	// "fill",
-	// "filter",//addDefaults
-
-	// "float",
-
-	// "gap", // 继承自定义 spacing
-	// "gradientColorStops",
-	// "grayscale", // 产生 包含`\/.`的类名 比如 .gap-0\.5 {  gap: 0.125rem}
-	// "gridAutoColumns",
-	// "gridAutoFlow",
-	// "gridAutoRows",
-	// "gridColumn",
-	// "gridColumnEnd",
-	// "gridColumnStart",
-	// "gridRow",
-	// "gridRowEnd",
-	// "gridRowStart",
-	// "gridTemplateColumns",
-	// "gridTemplateRows",
-
-	// "hueRotate",
-	// "inset", // 关联 spacing
-	// "invert",
-	// "isolation",
-	// "justifyContent",
-	// "justifyItems",
-	// "justifySelf",
-	// "letterSpacing",
-	// "lineHeight",
-	// "listStylePosition",
-	// "listStyleType",
-
-	// "maxHeight", // 继承自定义 spacing
-	// 'maxWidth',//自定义覆盖
-	// "minHeight",
-	// "minWidth",
-	// "mixBlendMode",
-	// "objectFit",
-	// "objectPosition",
-	// "opacity",
-	// "order",
-
-	// "overscrollBehavior",
-
-	// "placeContent",
-	// "placeholderColor",
-	// "placeholderOpacity",
-	// "placeItems",
-	// "placeSelf",
-	// "pointerEvents",
-	// "position",
-	// "resize",
-	// "ringColor",
-	// "ringOffsetColor",
-	// "ringOffsetWidth",
-	// "ringOpacity",
-	// "ringWidth", // 有 `*`
-	// "rotate",
-	// "saturate",
-	// "scale",
-	// "sepia",
-	// "skew",
-	// "space"	, // out 会产生not 小程序不认识错误 不支持 :not 选择器 , 间距 `.`
-	// "stroke",
-	// "strokeWidth",
-	// "tableLayout",
-
-	// "textDecoration",
-	// "textOpacity",
-	// "textOverflow",
-	// "textTransform",
-	// "transform",//addDefaults
-	// "transformOrigin",
-	// "transitionDelay",
-	// "transitionDuration",
-	// "transitionProperty",
-	// "transitionTimingFunction",
-
-	// "userSelect",
-	// "verticalAlign",
-	// "visibility",
-	// "whitespace",
-	// "width", // 继承自定义 spacing
-	// "wordBreak",
-	// "zIndex",
+	'fontSmoothing',
+	'textAlign',
+	'textDecoration', // no-underline 小程序不支持 但不报错
+	'textOverflow',
+	'textTransform',
+	'alignContent',
+	'alignItems',
+	'alignSelf',
+	'backgroundAttachment',
+	'backgroundClip',
+	'backgroundImage',
+	'backgroundOrigin',
+	'backgroundPosition',
+	'backgroundRepeat',
+	'backgroundSize',
+	'backgroundBlendMode',
+	'borderCollapse',
+	'borderStyle',
+	'whitespace',
+	'animation',
+	'position',
+	'appearance',
+	'zIndex',
+	'visibility',
+	'backdropBrightness',
+	'backdropContrast',
+	'backdropGrayscale',
+	'backdropHueRotate',
+	'backdropInvert',
+	'backdropOpacity',
+	'backdropSaturate',
+	'backdropSepia',
+	'boxDecorationBreak',
+	'boxSizing',
+	'float',
+	'brightness',
+	'clear',
+	'content',
+	'contrast',
+	'cursor',
+	'dropShadow',
+	'gap',
+	'grayscale',
+	'gridAutoColumns',
+	'gridAutoFlow',
+	'gridAutoRows',
+	'gridColumn',
+	'gridColumnEnd',
+	'gridColumnStart',
+	'gridRow',
+	'gridRowEnd',
+	'gridRowStart',
+	'gridTemplateColumns',
+	'gridTemplateRows',
+	'opacity',
+	'hueRotate',
+	'invert',
+	'isolation',
+	'letterSpacing',
+	'listStylePosition',
+	'listStyleType',
+	'mixBlendMode',
+	'objectFit',
+	'objectPosition',
+	'order',
+	'overscrollBehavior',
+	'placeContent',
+	'placeItems',
+	'placeSelf',
+	'pointerEvents',
+	'resize',
+	'saturate',
+	'scale',
+	'sepia',
+	'strokeWidth',
+	'tableLayout',
+	'transformOrigin',
+	'transitionDelay',
+	'transitionDuration',
+	'transitionProperty',
+	'transitionTimingFunction',
+	'userSelect',
+	'verticalAlign',
+	'wordBreak',
+	/**
+	 * 关闭的
+	 */
+	// "preflight",//与小程序不兼容的基础样式
+	// "container",//https://tailwindcss.com/docs/container
+	// "accessibility",//无障碍https://tailwindcss.com/docs/preflight#accessibility-considerations
+	// "backdropFilter",// 2.1主题3改了，有*
+	// "filter",//2.1主题3改了，有*
+	// "ringOpacity",//2+主题3后没用
+	// "divideColor",  //  小程序 不支持 :not 选择器
+	// "divideOpacity",//  小程序 不支持 :not 选择器
+	// "divideStyle",  //   小程序不支持 :not 选择器
+	// "divideWidth",   //   小程序不支持 :not 选择器
+	// "placeholderOpacity",//小程序不支持
+	// 'textOpacity', // 2中主题3取消用"/",
+	// 'backgroundOpacity',// 2中主题3取消用"/",
+	// 'borderOpacity',// 2中主题3取消用"/",
 ];
