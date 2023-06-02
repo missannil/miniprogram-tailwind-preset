@@ -1,6 +1,6 @@
 {
 	"name": "miniprogram-tailwind-preset",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "tailwindcss在微信小程序中使用时的预设文件",
 	"main": "index.js",
 	"scripts": {

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.3.0...v0.4.0) (2023-06-02)
+
+
+### Features
+
+* 增加多主题颜色功能(variableColors主题)) ([b24bcbb](https://github.com/missannil/miniprogram-tailwind-preset/commit/b24bcbbdd366fd48e257161eb14dba82ad825944))
+
 ## [0.3.0](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.2.1...v0.3.0) (2023-06-01)
 
 
