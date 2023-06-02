@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.4.0...v0.4.1) (2023-06-02)
+
+
+### Bug Fixes
+
+* 去除默认关闭了的colors ([f2fdea4](https://github.com/missannil/miniprogram-tailwind-preset/commit/f2fdea4d1206077855212d07ee9ebfc1539a11fa))
+
 ## [0.4.0](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.3.0...v0.4.0) (2023-06-02)
 
 
