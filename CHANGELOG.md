@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.4.1...v0.4.2) (2023-06-02)
+
+
+### Bug Fixes
+
+* 添加package.json中的keywords. 修复variableColors主题 ([58873d9](https://github.com/missannil/miniprogram-tailwind-preset/commit/58873d9bf1c8c8e872acfed27b933b9177b68aa3))
+
 ## [0.4.1](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.4.0...v0.4.1) (2023-06-02)
 
 
