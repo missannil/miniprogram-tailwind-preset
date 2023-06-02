@@ -62,7 +62,6 @@ export const preset: Config = {
 		backdropBlur,
 		blur,
 		inset,
-		colors: {},
 		lineHeight,
 		gradientColorStopPositions,
 		removeAddDefaultsgradientColorStops,
