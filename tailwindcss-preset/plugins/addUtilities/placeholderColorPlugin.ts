@@ -1,8 +1,10 @@
 import type { PluginCreator } from 'tailwindcss/types/config';
-import { createValue } from '../../utils/createValue';
 import { flattenColorPalette } from '../../utils/flattenColorPalette';
 import { isEmptyObject } from '../../utils/isEmptyObject';
-export const textColorPulgin: PluginCreator = ({ addUtilities, theme }) => {
+export const placeholderColorPlugin: PluginCreator = ({
+	theme,
+	matchUtilities,
+}) => {
 	const defaultTheme: object = theme('colors');
 	const variableColors: {
 		text: Record<string, Record<string, string>>;
@@ -11,7 +13,22 @@ export const textColorPulgin: PluginCreator = ({ addUtilities, theme }) => {
 	const colorsTheme = isEmptyObject(defaultTheme)
 		? Object.assign(variableColors.common, variableColors.text)
 		: defaultTheme;
-	addUtilities({
-		...createValue(flattenColorPalette(colorsTheme), 'text', 'color'),
-	});
+	matchUtilities(
+		{
+			placeholder: (value): any => {
+				return {
+					'&::placeholder': {
+						color: value,
+					},
+				};
+			},
+		},
+		{
+			values: flattenColorPalette(colorsTheme),
+			type: ['color', 'any'],
+		}
+	);
+	// addUtilities({
+	// 	...createValue(flattenColorPalette(colorsTheme), '::caret', 'caretColor'),
+	// });
 };

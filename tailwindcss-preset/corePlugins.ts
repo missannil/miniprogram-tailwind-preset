@@ -4,11 +4,12 @@ export const corePlugins: CorePluginList[] = [
 	/**
 	 * 自定义plugin取代的
 	 */
-	// 'backgroundColor',//匹配颜色方案
-	// 'borderColor',//匹配颜色方案
-	// 'textColor',//匹配颜色方案
-	// 'caretColor',//匹配颜色方案
-	// "fill", //匹配颜色方案
+	// 'backgroundColor',//多主题颜色方案
+	// 'borderColor',//多主题颜色方案
+	// 'textColor',//多主题颜色方案
+	// 'caretColor',//多主题颜色方案
+	// 'ringColor'//多主题颜色方案,
+	// "fill", //多主题颜色方案
 	// "boxShadow",//带*号
 	// "gradientColorStops",//带*号
 	// "transform",// 带*号
@@ -27,7 +28,6 @@ export const corePlugins: CorePluginList[] = [
 	'stroke',
 	'skew',
 	'rotate',
-	'ringColor',
 	'ringOffsetColor',
 	'ringOffsetWidth',
 	'lineHeight',
@@ -39,7 +39,8 @@ export const corePlugins: CorePluginList[] = [
 	'maxWidth',
 	'minHeight',
 	'minWidth',
-	'placeholderColor', //小程序暂不支持::placeholder选择器,但不报错,预留着
+	// 'placeholderColor', //小程序暂不支持::placeholder选择器,但不报错,预留着
+
 	//--------主题配置被修改结束---------
 	'display',
 	'flex',
@@ -152,7 +153,7 @@ export const corePlugins: CorePluginList[] = [
 	// "divideOpacity",//  小程序 不支持 :not 选择器
 	// "divideStyle",  //   小程序不支持 :not 选择器
 	// "divideWidth",   //   小程序不支持 :not 选择器
-	// "placeholderOpacity",//小程序不支持
+	// 'placeholderOpacity', //不适合多主题
 	// 'textOpacity', // 2中主题3取消用"/",
 	// 'backgroundOpacity',// 2中主题3取消用"/",
 	// 'borderOpacity',// 2中主题3取消用"/",

@@ -1,4 +1,4 @@
-export const colors = {
+export const variableColors = {
 	bg: {
 		primary: {
 			darkest: `var(--bg-primary-darkest)`,

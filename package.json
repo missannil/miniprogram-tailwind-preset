@@ -6,7 +6,8 @@
 	"scripts": {
 		"prepare": "husky install",
 		"tw": "tailwind  -o ./miniprogram/style/tailwind.wxss --watch",
-		"build": "tsc  -p ./tsconfig-build.json"
+		"build": "tsc  -p ./tsconfig-build.json",
+		"type": "tsc"
 	},
 	"keywords": [],
 	"author": "",

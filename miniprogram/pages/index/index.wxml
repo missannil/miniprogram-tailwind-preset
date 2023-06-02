@@ -12,11 +12,13 @@
 		class="text-striking caret-primary common"
 		placeholder="caret-primary "
 	></input>
-    
-	<view class=" rotate  table-cell saturate-50 origin-bottom-right   bg-primary-darkest   w-200 h-200  rounded-1F2 stacked-fractions align-middle break-keep ring-2 center" placeholder="测试">123321</view>
 
-	<view class=" grid     gap-10 col-span-3 ">
-		<view class="bg-primary border-2 w-100 h-100 ">0</view>
+	<input
+		class="rotate border-primary placeholder-striking table-cell saturate-50 origin-bottom-right fill-primary caret-striking ring-slate-100 text-sky-700 placeholder-opacity-60 w-200 h-200 rounded-1F2 stacked-fractions align-middle break-keep ring-2 center"
+		placeholder="测试文字"
+	></input>123321
+	<view class="grid gap-10 col-span-3">
+		<view class="bg-primary border-2 w-100 h-100">0</view>
 		<view class="bg-primary border-2 w-100 h-100">1</view>
 		<view class="bg-primary border-2 w-100 h-100">2</view>
 		<view class="bg-primary border-2 w-100 h-100">3</view>
@@ -26,6 +28,5 @@
 		<view class="bg-primary border-2 w-100 h-100">7</view>
 		<view class="bg-primary border-2 w-100 h-100">8</view>
 		<view class="bg-primary border-2 w-100 h-100">9</view>
-
 	</view>
 </page>
