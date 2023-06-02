@@ -10,7 +10,7 @@ export const variableColors = {
 		embellish: {
 			darkest: `var(--bg-embellish-darkest)`,
 			dark: 'var(--bg-embellish-dark)',
-			DEFAULT: 'var(--bg-embellish-dark)',
+			DEFAULT: 'var(--bg-embellish)',
 			light: 'var(--bg-embellish-light)',
 			lightest: `var(--bg-embellish-lightest)`,
 		},
@@ -31,7 +31,7 @@ export const variableColors = {
 		gray: {
 			darkest: `var(--bg-gray-darkest)`,
 			dark: 'var(--bg-gray-dark)',
-			DEFAULT: 'var(--bg-gray-dark)',
+			DEFAULT: 'var(--bg-gray)',
 			light: 'var(--bg-gray-light)',
 			lightest: `var(--bg-gray-lightest)`,
 		},
@@ -47,7 +47,7 @@ export const variableColors = {
 		embellish: {
 			darkest: `var(--text-embellish-darkest)`,
 			dark: 'var(--text-embellish-dark)',
-			DEFAULT: 'var(--text-embellish-dark)',
+			DEFAULT: 'var(--text-embellish)',
 			light: 'var(--text-embellish-light)',
 			lightest: `var(--text-embellish-lightest)`,
 		},
@@ -61,14 +61,14 @@ export const variableColors = {
 		white: {
 			darkest: `var(--text-white-darkest)`,
 			dark: 'var(--text-white-dark)',
-			DEFAULT: 'var(--text-white-dark)',
+			DEFAULT: 'var(--text-white)',
 			light: 'var(--text-white-light)',
 			lightest: `var(--text-white-lightest)`,
 		},
 		gray: {
 			darkest: `var(--text-gray-darkest)`,
 			dark: 'var(--text-gray-dark)',
-			DEFAULT: 'var(--text-gray-dark)',
+			DEFAULT: 'var(--text-gray)',
 			light: 'var(--text-gray-light)',
 			lightest: `var(--text-gray-lightest)`,
 		},

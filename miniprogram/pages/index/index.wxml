@@ -14,7 +14,7 @@
 	></input>
 
 	<input
-		class="rotate border-primary placeholder-striking table-cell saturate-50 origin-bottom-right fill-primary caret-striking ring-slate-100 text-sky-700 placeholder-opacity-60 w-200 h-200 rounded-1F2 stacked-fractions align-middle break-keep ring-2 center"
+		class=" border-purple-200 placeholder-striking table-cell saturate-50 origin-bottom-right fill-primary caret-striking ring-slate-100 text-sky-700 placeholder-opacity-60 w-200 h-200 rounded-1F2 stacked-fractions align-middle break-keep ring-2 center"
 		placeholder="测试文字"
 	></input>123321
 	<view class="grid gap-10 col-span-3">

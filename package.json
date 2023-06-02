@@ -9,7 +9,12 @@
 		"build": "tsc  -p ./tsconfig-build.json",
 		"type": "tsc"
 	},
-	"keywords": [],
+	"keywords": [
+		"tailwind",
+		"tailwindcss",
+		"miniprogram",
+		"preset"
+	],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
