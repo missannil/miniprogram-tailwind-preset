@@ -5,6 +5,7 @@ node_modules
 .vscode
 **/*.map
 miniprogram/styles/tailwind.wxss
-.eslintcache  
+.eslintcache
 !ewm.config.js
+!commitlint.config.js
 project.private.config.json

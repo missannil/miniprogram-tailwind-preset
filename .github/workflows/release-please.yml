@@ -20,7 +20,7 @@ jobs:
         # action id 便于其他流访问
         id: release
         with:
-          #项目类型 
+          #项目类型
           release-type: node
           #包名称
           package-name: miniprogram-tailwind-preset
@@ -35,7 +35,7 @@ jobs:
           node-version: 18
           registry-url: 'https://registry.npmjs.org'
         if: ${{ steps.release.outputs.release_created }}
-      - run: npm i husky -D 
+      - run: npm i husky -D
         if: ${{ steps.release.outputs.release_created }}
       - run: npm run build
         if: ${{ steps.release.outputs.release_created }}
