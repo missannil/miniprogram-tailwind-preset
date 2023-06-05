@@ -4,6 +4,7 @@ node_modules
 .vscode
 miniprogram/styles/tailwind.wxss
 .eslintcache
-!tailwindcss-preset
+!config.full.js
+!corePlugins.js
 !commitlint.config.js
 project.private.config.json
