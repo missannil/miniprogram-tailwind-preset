@@ -1,9 +1,10 @@
 # 工作流名称
 name:  release-please
 on:
-  - push
-  branches:
-    - main
+  push:
+  pull_request:
+    branches:
+      - main
 # 权限
 permissions:
   contents: write
