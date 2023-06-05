@@ -1,3 +1,4 @@
+# 工作流名称
 name: CI
 on:
   - push
@@ -9,8 +10,6 @@ jobs:
 permissions:
   contents: write
   pull-requests: write
-# 工作流名称
-name:  release-please
 # 工作流程
 jobs:
   # 第一个工作
