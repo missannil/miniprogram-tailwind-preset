@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.4](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.4.3...v0.4.4) (2023-06-05)
+
+
+### Bug Fixes
+
+* .yml ([7a65fe3](https://github.com/missannil/miniprogram-tailwind-preset/commit/7a65fe332a86595a681a57ea97641006f1daba4c))
+* test.ts ([#17](https://github.com/missannil/miniprogram-tailwind-preset/issues/17)) ([f3bff80](https://github.com/missannil/miniprogram-tailwind-preset/commit/f3bff80aa8aed1a7ff0dfebe8d93a52d24a9e9ce))
+
 ## [0.4.3](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.4.2...v0.4.3) (2023-06-04)
 
 
