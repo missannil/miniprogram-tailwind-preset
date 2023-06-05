@@ -14,32 +14,32 @@ export const fontVariantNumericPlugin: PluginCreator = ({ addUtilities }) => {
 			'font-variant-numeric':
 				'var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)',
 		},
-        '.lining-nums': {
+		'.lining-nums': {
 			'--tw-numeric-figure': 'lining-nums',
 			'font-variant-numeric':
 				'var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)',
 		},
-        '.oldstyle-nums': {
+		'.oldstyle-nums': {
 			'--tw-numeric-figure': 'oldstyle-nums',
 			'font-variant-numeric':
 				'var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)',
 		},
-        '.proportional-nums': {
+		'.proportional-nums': {
 			'--tw-numeric-spacing': 'proportional-nums',
 			'font-variant-numeric':
 				'var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)',
 		},
-        '.tabular-nums': {
+		'.tabular-nums': {
 			'--tw-numeric-spacing': 'tabular-nums',
 			'font-variant-numeric':
 				'var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)',
 		},
-        '.diagonal-fractions': {
+		'.diagonal-fractions': {
 			'--tw-numeric-fraction': 'diagonal-fractions',
 			'font-variant-numeric':
 				'var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)',
 		},
-        '.stacked-fractions': {
+		'.stacked-fractions': {
 			'--tw-numeric-fraction': 'stacked-fractions',
 			'font-variant-numeric':
 				'var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)',

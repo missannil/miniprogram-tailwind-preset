@@ -1,11 +1,9 @@
-# Node.js
 **/*.js
 **/*.d.ts
 node_modules
 .vscode
-**/*.map
 miniprogram/styles/tailwind.wxss
 .eslintcache
-!ewm.config.js
+!tailwindcss-preset
 !commitlint.config.js
 project.private.config.json
