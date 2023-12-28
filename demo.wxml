@@ -1,0 +1,73 @@
+<!---------------------修改过的主题------------------->
+
+<!-- corePlugins:"width", theme:"width"-->
+<view
+	class="w-20 w-750 w-20vw w-20vh w-screen w-svw w-lvw w-dvw w-min w-max w-fit"
+></view>
+
+<!-- corePlugins:"height", theme:"height"-->
+<view
+	class="h-38 h-750 h-20vh h-screen h-svh h-lvh h-dvh h-min h-max h-fit"
+></view>
+
+<!-- corePlugins:"borderWidth", theme:"borderWidth"-->
+<view class="border-10"></view>
+
+<!-- corePlugins:"fontSize", theme:"fontSize"-->
+<view class="text-20vh text-25vw text-40"></view>
+
+<!-- corePlugins:"borderRadius", theme:"borderRadius"-->
+<view class="rounded-30"></view>
+
+<!-- corePlugins:"skew" , theme:"skew"-->
+<view class="skew-x-10 skew-y-180 -skew-x-20"></view>
+
+<!-- corePlugins:"stroke" , theme:"stroke"-->
+<view class="stroke-2"></view>
+
+<!-- corePlugins:"rotate" , theme:"rotate"-->
+<view class="rotate-20"></view>
+
+<!-- corePlugins:"ringOffsetWidth" , theme:"ringOffsetWidth"-->
+<view class="ring-offset-100"></view>
+
+<!-- corePlugins:"ringOffsetColor" , theme:"ringOffsetColor"-->
+<view class="ring-teal-300"></view>
+
+<!-- corePlugins:"minWidth" , theme:"minWidth"-->
+<view class="min-w-140"></view>
+
+<!-- corePlugins:"minHeight" , theme:"minHeight"-->
+<view class="min-h-200"></view>
+
+<!-- corePlugins:"maxWidth" , theme:"maxWidth"-->
+<view class="max-w-300"></view>
+
+<!-- corePlugins:"maxHeight" , theme:"maxHeight"-->
+<view class="max-h-400"></view>
+
+<!-- corePlugins:"flexBasis" , theme:"flexBasis"-->
+<view class="basis-254"></view>
+
+<!-- corePlugins:"backdropBlur" , theme:"backdropBlur"-->
+<view class="backdrop-blur-10"></view>
+
+<!-- corePlugins:"blur" , theme:"blur"-->
+<view class="blur-9"></view>
+
+<!-- corePlugins:"lineHeight" , theme:"lineHeight"-->
+<view class="leading-2"></view>
+
+<!-- corePlugins:"inset" , theme:"inset"-->
+<view class="inset-10"></view>
+
+<!-- corePlugins:"translate" , theme:"translate"-->
+<view class="translate-x-10 snap-x  border-purple-500 shadow-sm  translate-y-20"></view>
+
+
+
+
+
+
+
+

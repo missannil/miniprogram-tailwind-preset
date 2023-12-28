@@ -1,6 +1,0 @@
-<view
-	class="{{colorTheme}}"
-	wx:if="{{isReady}}"
->
-	<slot />
-</view>

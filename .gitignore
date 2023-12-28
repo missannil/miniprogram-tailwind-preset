@@ -8,3 +8,5 @@ miniprogram/styles/tailwind.wxss
 !corePlugins.js
 !commitlint.config.js
 project.private.config.json
+!tailwind.config.full.js
+dist
