@@ -1,3 +1,0 @@
-import "./inject";
-App({});
-

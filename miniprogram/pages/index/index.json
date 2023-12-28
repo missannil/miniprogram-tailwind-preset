@@ -1,7 +1,0 @@
-{
-    "usingComponents":{
-        "page":"/components/page/page",
-        "top_nav":"/components/top_nav/top_nav"
-    }
-}
-  

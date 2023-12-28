@@ -1,27 +1,7 @@
-import type { Config } from 'tailwindcss';
-import { preset } from './index';
-import plugin from 'tailwindcss/plugin';
+import type { Config } from "tailwindcss";
+import { preset } from "./src";
 export default {
-	content: [
-		'./miniprogram/components/**.*.{wxml,ts}',
-		'./miniprogram/pages/**/*.{wxml,ts}',
-	],
-	presets: [preset],
-	plugins: [
-		plugin(({ addComponents }) => {
-			addComponents({
-				'.common': {
-					color: 'var(--text-primary,red)',
-					margin: '20rpx auto 0',
-					'text-align': 'center',
-					'border-width': '1px',
-				},
-				'.center': {
-					display: 'flex',
-					'align-items': 'center',
-					'justify-content': 'center',
-				},
-			});
-		}),
-	],
+  content: ["demo.wxml"],
+  presets: [preset],
+  separator: ":",
 } satisfies Config;
