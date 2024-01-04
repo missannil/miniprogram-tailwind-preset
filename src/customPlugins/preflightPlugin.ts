@@ -10,17 +10,10 @@ export const preflightPlugin: PluginCreator = ({ addBase }) => {
       "text-size-adjust": "100%",
       "font-family":
         `"fontFamily.sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
-      "padding ": `constant(safe-area-inset-top, 0px)
-			             constant(safe-area-inset-right, 0px)
-			             constant(safe-area-inset-bottom, 0px)
-			             constant(safe-area-inset-left, 0px)`,
-      padding: `env(safe-area-inset-top, 0px)
-		              env(safe-area-inset-right, 0px)
-			          env(safe-area-inset-bottom, 0px)
-		              env(safe-area-inset-left, 0px)`,
+      padding:
+        `env(safe-area-inset-top, 0px)   env(safe-area-inset-right, 0px)  env(safe-area-inset-bottom, 0px)   env(safe-area-inset-left, 0px)`,
     },
-
-    "page,view,[class],image,i,icon,text,::before,::after": {
+    "view,image,i,[class],text,::before,::after": {
       "box-sizing": "border-box",
       "border-width": "0",
       "border-style": "solid",
