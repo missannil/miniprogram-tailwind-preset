@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.5.0...v0.5.1) (2024-01-12)
+
+
+### Bug Fixes
+
+* prefilghtPlugin添加 [class] ([989d539](https://github.com/missannil/miniprogram-tailwind-preset/commit/989d539fb6f2c99c6185dad0acf0c9980433c03d))
+
 ## [0.5.0](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.4.4...v0.5.0) (2023-12-29)
 
 
