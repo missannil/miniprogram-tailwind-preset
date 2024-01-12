@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "prepare": "husky install",
+    "lint": "eslint . --fix && npm run fmt",
     "build": "tsc  -p ./tsconfig-build.json",
     "tw": "tailwindcss  -o demo.out.wxss --watch",
     "fmt": "dprint fmt"
