@@ -7,7 +7,8 @@
     "prepare": "husky install",
     "build": "tsc  -p ./tsconfig-build.json",
     "tw": "tailwindcss  -o demo.out.wxss --watch",
-    "fmt": "dprint fmt"
+    "fmt": "dprint fmt",
+    "type": "tsc --watch"
   },
   "keywords": [
     "tailwind",
