@@ -1,38 +1,40 @@
 import type { Config } from "tailwindcss/types/config";
-import { backdropFilterPlugin } from "./customPlugins/addUtilities/backdropFilterPlugin";
-import { borderSpacingPlugin } from "./customPlugins/addUtilities/borderSpacingPlugin";
-import { boxShadowPlugin } from "./customPlugins/addUtilities/boxShadowPlugin";
-import { filterPlugin } from "./customPlugins/addUtilities/filterPlugin";
-import { fontVariantNumericPlugin } from "./customPlugins/addUtilities/fontVariantNumericPlugin";
-import { gradientColorStopsPlugin } from "./customPlugins/addUtilities/gradientColorStopsPlugin";
-import { ringWidthPlugin } from "./customPlugins/addUtilities/ringWidthPluginPlugin";
-import { scrollSnapTypePlugin } from "./customPlugins/addUtilities/scrollSnapTypePlugin";
-import { touchActionPlugin } from "./customPlugins/addUtilities/touchActionPlugin";
-import { transformPlugin } from "./customPlugins/addUtilities/transformPlugin";
-import { preflightPlugin } from "./customPlugins/preflightPlugin";
-
+import { backdropFilter } from "./customPlugins/backdropFilter";
+import { borderSpacing } from "./customPlugins/borderSpacing";
+import { boxShadow } from "./customPlugins/boxShadow";
+import { contain } from "./customPlugins/contain";
+import { filter } from "./customPlugins/filter";
+import { fontVariantNumeric } from "./customPlugins/fontVariantNumeric";
+import { gradientColorStops } from "./customPlugins/gradientColorStops";
+import { preflight } from "./customPlugins/preflight";
+import { ringWidth } from "./customPlugins/ringWidth";
+import { scrollSnapType } from "./customPlugins/scrollSnapType";
+import { touchAction } from "./customPlugins/touchAction";
+import { transform } from "./customPlugins/transform";
+// https://tailwindcss.com/docs
 export const preset: Config = {
   content: [],
+  separator: "_", // 3.4.4开始Tailwind CSS IntelliSense插件支持 `_` 分隔符
   corePlugins: {
-    preflight: false, // 与小程序不兼容的基础样式
-    container: false, // https://tailwindcss.com/docs/container
-    accessibility: false, // 无障碍https://tailwindcss.com/docs/preflight#accessibility-considerations
-    placeholderColor: false, // 不支持::placeholder选择器,使用placeholder-class代替
-    placeholderOpacity: false, // 不支持::placeholder选择器,使用placeholder-class代替
+    preflight: false, // 不支持 `*` 选择器等不兼容的基础样式
+    container: false, //  不符合小程序的设计规范,如需要使用可自定义的媒体查询
+    placeholderColor: false, // 不支持::placeholder选择器,小程序中使用placeholder-class代替
+    placeholderOpacity: false, // 不支持::placeholder选择器,小程序中使用placeholder-class代替
     divideColor: false, //   不支持 :not 选择器
     divideOpacity: false, //   不支持 :not 选择器
     divideStyle: false, //   不支持 :not 选择器
     divideWidth: false, //   不支持 :not 选择器
-    backdropFilter: false, // 不支持 * 选择器
-    filter: false, // 不支持 * 选择器
-    ringWidth: false, // 不支持 * 选择器
-    boxShadow: false, // 不支持 * 选择器
-    fontVariantNumeric: false, // 不支持 * 选择器
-    gradientColorStops: false, // 不支持 * 选择器
-    scrollSnapType: false, // 不支持 * 选择器
-    touchAction: false, // 不支持 * 选择器
-    transform: false, // 不支持 * 选择器
-    borderSpacing: false, // 不支持 * 选择器
+    backdropFilter: false, // 不支持 `*` 选择器,通过 backdropFilterPlugin 重新定义
+    filter: false, // 不支持 `*` 选择器,通过 filterPlugin 重新定义
+    ringWidth: false, // 不支持 `*` 选择器,通过 ringWidthPlugin 重新定义
+    boxShadow: false, // 不支持 `*` 选择器,通过 boxShadowPlugin 重新定义
+    fontVariantNumeric: false, // 不支持 `*` 选择器,通过 fontVariantNumericPlugin 重新定义
+    gradientColorStops: false, // 不支持 `*` 选择器,通过 gradientColorStopsPlugin 重新定义
+    scrollSnapType: false, // 不支持 `*` 选择器,通过 scrollSnapTypePlugin 重新定义
+    touchAction: false, // 不支持 `*` 选择器,通过 touchActionPlugin 重新定义
+    transform: false, // 不支持 `*` 选择器,通过 transformPlugin 重新定义
+    borderSpacing: false, // 不支持 `*` 选择器,通过 borderSpacingPlugin 重新定义
+    contain: false, //  不支持 `*` 选择器,通过 containPlugin 重新定义
   },
   theme: {
     percents: {
@@ -1601,16 +1603,17 @@ export const preset: Config = {
     }),
   },
   plugins: [
-    preflightPlugin,
-    backdropFilterPlugin,
-    filterPlugin,
-    ringWidthPlugin,
-    boxShadowPlugin,
-    fontVariantNumericPlugin,
-    gradientColorStopsPlugin,
-    scrollSnapTypePlugin,
-    touchActionPlugin,
-    transformPlugin,
-    borderSpacingPlugin,
+    preflight,
+    backdropFilter,
+    filter,
+    ringWidth,
+    boxShadow,
+    fontVariantNumeric,
+    gradientColorStops,
+    scrollSnapType,
+    touchAction,
+    transform,
+    borderSpacing,
+    contain,
   ],
 };

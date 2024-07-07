@@ -1,5 +1,5 @@
 import type { PluginCreator } from "tailwindcss/types/config";
-export const ringWidthPlugin: PluginCreator = ({ matchUtilities, addUtilities, theme }) => {
+export const ringWidth: PluginCreator = ({ matchUtilities, addUtilities, theme }) => {
   matchUtilities(
     {
       ring: (value) => {

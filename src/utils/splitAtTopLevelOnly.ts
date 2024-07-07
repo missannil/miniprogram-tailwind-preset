@@ -13,7 +13,7 @@
  * @param {string} input
  * @param {string} separator
  */
-// @ts-nocheck
+// @ts-ignore
 export function splitAtTopLevelOnly(input, separator) {
   let stack = [];
   let parts = [];

@@ -7,21 +7,14 @@ page {
      -moz-text-size-adjust: 100%;
           text-size-adjust: 100%;
   font-family: "fontFamily.sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  padding : constant(safe-area-inset-top, 0px)
-			             constant(safe-area-inset-right, 0px)
-			             constant(safe-area-inset-bottom, 0px)
-			             constant(safe-area-inset-left, 0px);
-  padding: env(safe-area-inset-top, 0px)
-		              env(safe-area-inset-right, 0px)
-			          env(safe-area-inset-bottom, 0px)
-		              env(safe-area-inset-left, 0px)
+  padding: env(safe-area-inset-top, 0px)   env(safe-area-inset-right, 0px)  env(safe-area-inset-bottom, 0px)   env(safe-area-inset-left, 0px)
 }
 
-page,view,[class],image,i,icon,text,::before,::after {
+page,view,image,i,icon,[class],text,::before,::after {
   box-sizing: border-box;
   border-width: 0;
   border-style: solid;
-  border-color: currentColor
+  border-color: currentdColor
 }
 
 ::before,::after,::backdrop {
@@ -71,7 +64,7 @@ page,view,[class],image,i,icon,text,::before,::after {
   --tw-backdrop-invert: ;
   --tw-backdrop-opacity: ;
   --tw-backdrop-saturate: ;
-  --tw-backdrop-sepia: 
+  --tw-backdrop-sepia:
 }
 
 .inset-10 {
@@ -218,6 +211,10 @@ page,view,[class],image,i,icon,text,::before,::after {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
 
+.overscroll-contain {
+  overscroll-behavior: contain
+}
+
 .rounded-30 {
   border-radius: 30rpx
 }
@@ -229,6 +226,10 @@ page,view,[class],image,i,icon,text,::before,::after {
 .border-purple-500 {
   --tw-border-opacity: 1;
   border-color: rgb(168 85 247 / var(--tw-border-opacity))
+}
+
+.bg-contain {
+  background-size: contain
 }
 
 .stroke-2 {
@@ -279,4 +280,8 @@ page,view,[class],image,i,icon,text,::before,::after {
 
 .snap-x {
   scroll-snap-type: x var(--tw-scroll-snap-strictness)
+}
+
+.contain-none {
+  contain: none
 }

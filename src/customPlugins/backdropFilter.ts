@@ -10,7 +10,7 @@ let cssBackdropFilterValue = [
   "var(--tw-backdrop-saturate)",
   "var(--tw-backdrop-sepia)",
 ].join(" ");
-export const backdropFilterPlugin: PluginCreator = ({ addUtilities }) => {
+export const backdropFilter: PluginCreator = ({ addUtilities }) => {
   addUtilities({
     ".backdrop-filter": {
       "@defaults backdrop-filter": {},
