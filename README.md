@@ -1,6 +1,12 @@
-# miniprogram-tailwind-preset
+## miniprogram-tailwind-preset
 
-在微信小程序中使用tailwindcss( 3.4.0 )时的预设文件
+在微信小程序中使用tailwindcss( 3.4.4 )时的预设文件.
+
+### 特性
+
+- 兼容大多数原生写法
+- 关闭与小程序不兼容的默认插件,对应的自定义插件替换
+- 修改默认separator为`_`
 
 ### 安装
 
@@ -19,30 +25,48 @@ export default {
 }; // satisfies Config;
 ```
 
-### 关闭的插件
+### 关闭的默认插件
 
-    preflight: false, // 与小程序不兼容的基础样式
-    container: false, // https://tailwindcss.com/docs/container
-    accessibility: false, // 无障碍https://tailwindcss.com/docs/preflight#accessibility-considerations
-    placeholderColor: false, // 不支持::placeholder选择器,使用placeholder-class代替
-    placeholderOpacity: false, // 不支持::placeholder选择器,使用placeholder-class代替
-    // borderColor: false,
-    divideColor: false, //   不支持 :not 选择器
-    divideOpacity: false, //   不支持 :not 选择器
-    divideStyle: false, //   不支持 :not 选择器
-    divideWidth: false, //   不支持 :not 选择器
-    backdropFilter: false, // 不支持 * 选择器
-    filter: false, // 不支持 * 选择器  有自定义插件替换
-    ringWidth: false, // 不支持 * 选择器 有自定义插件替换
-    boxShadow: false, // 不支持 * 选择器 有自定义插件替换
-    fontVariantNumeric: false, // 不支持 * 选择器 有自定义插件替换
-    gradientColorStops: false, // 不支持 * 选择器 有自定义插件替换
-    scrollSnapType: false, // 不支持 * 选择器 有自定义插件替换
-    touchAction: false, // 不支持 * 选择器 有自定义插件替换
-    transform: false, // 不支持 * 选择器 有自定义插件替换
-    borderSpacing: false, // 不支持 * 选择器 有自定义插件替换
+- preflight: false, // 不支持 `*` 选择器等不兼容的基础样式
+- container: false, // 不符合小程序的设计规范,如需要使用可自定义的媒体查询
+- placeholderColor: false, // 不支持::placeholder选择器,小程序中使用placeholder-class代替
+- placeholderOpacity: false, // 不支持::placeholder选择器,小程序中使用placeholder-class代替
+- divideColor: false, // 不支持 :not 选择器
+- divideOpacity: false, // 不支持 :not 选择器
+- divideStyle: false, // 不支持 :not 选择器
+- divideWidth: false, // 不支持 :not 选择器
+- backdropFilter: false, // 不支持 `*` 选择器,通过 backdropFilterPlugin 重新定义
+- filter: false, // 不支持 `*` 选择器,通过 filterPlugin 重新定义
+- ringWidth: false, // 不支持 `*` 选择器,通过 ringWidthPlugin 重新定义
+- boxShadow: false, // 不支持 `*` 选择器,通过 boxShadowPlugin 重新定义
+- fontVariantNumeric: false, // 不支持 `*` 选择器,通过 fontVariantNumericPlugin 重新定义
+- gradientColorStops: false, // 不支持 `*` 选择器,通过 gradientColorStopsPlugin 重新定义
+- scrollSnapType: false, // 不支持 `*` 选择器,通过 scrollSnapTypePlugin 重新定义
+- touchAction: false, // 不支持 `*` 选择器,通过 touchActionPlugin 重新定义
+- transform: false, // 不支持 `*` 选择器,通过 transformPlugin 重新定义
+- borderSpacing: false, // 不支持 `*` 选择器,通过 borderSpacingPlugin 重新定义
+- contain: false, // 不支持 `*` 选择器,通过 containPlugin 重新定义
 
-### 暂不支持的
+### 自定义主题
+
+- 见[配置文件](dist/index.js)
+
+### 自定义插件
+
+- [preflight](dist/customPlugins/preflight.js)
+- [backdropFilter](dist/customPlugins/backdropFilter.js)
+- [filter](dist/customPlugins/filter.js)
+- [ringWidth](dist/customPlugins/ringWidth.js)
+- [boxShadow](dist/customPlugins/boxShadow.js)
+- [fontVariantNumeric](dist/customPlugins/fontVariantNumeric.js)
+- [gradientColorStops](dist/customPlugins/gradientColorStops.js)
+- [scrollSnapType](dist/customPlugins/scrollSnapType.js)
+- [touchAction](dist/customPlugins/touchAction.js)
+- [transform](dist/customPlugins/transform.js)
+- [borderSpacing](dist/customPlugins/borderSpacing.js)
+- [contain](dist/customPlugins/contain.js)
+
+### 不同于原生实体类的写法
 
 - 任意值写法 (arbitrary values)
   类样式: w-[100rpx]
@@ -54,19 +78,3 @@ export default {
   替代方案: 对应主题加入1-750rpx映射值
   替代类样式:w-100
   编译后: .w-100 { width: 100rpx }
-
-### 自定义插件
-
-- [preflightPlugin](src/customPlugins/preflightPlugin.ts) 同原生插件(去除添加`*`选择器的addDefaults)
-
-- [backdropFilterPlugin](src/customPlugins/preflightPlugin.ts) 同原生插件(去除添加`*`选择器的addDefaults)
-- [filterPlugin](src/customPlugins/filterPlugin.ts) 同原生插件(去除添加`*`选择器的addDefaults)
-- [ringWidthPlugin](src/customPlugins/ringWidthPlugin.ts)同原生插件(去除添加`*`选择器的addDefaults)
-- [boxShadowPlugin](src/customPlugins/boxShadowPlugin.ts)同原生插件(去除添加`*`选择器的addDefaults)
-- [fontVariantNumericPlugin](src/customPlugins/fontVariantNumericPlugin.ts)同原生插件(去除添加`*`选择器的addDefaults)
-- [gradientColorStopsPlugin](src/customPlugins/gradientColorStopsPlugin.ts)同原生插件(去除添加`*`选择器的addDefaults)
-- [scrollSnapTypePlugin](src/customPlugins/scrollSnapTypePlugin.ts)同原生插件(去除添加`*`选择器的addDefaults)
-- [touchActionPlugin](src/customPlugins/touchActionPlugin.ts)同原生插件(去除添加`*`选择器的addDefaults)
-- [transformPlugin](src/customPlugins/transformPlugin.ts)同原生插件(去除添加`*`选择器的addDefaults)
-- [borderSpacingPlugin](src/customPlugins/borderSpacingPlugin.ts)同原生插件(去除添加`*`选择器的addDefaults)
--

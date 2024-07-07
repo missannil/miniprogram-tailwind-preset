@@ -10,7 +10,7 @@ let cssFilterValue = [
   "var(--tw-sepia)",
   "var(--tw-drop-shadow)",
 ].join(" ");
-export const filterPlugin: PluginCreator = ({ addUtilities }) => {
+export const filter: PluginCreator = ({ addUtilities }) => {
   addUtilities({
     ".filter": { "@defaults filter": {}, filter: cssFilterValue },
     ".filter-none": { filter: "none" },

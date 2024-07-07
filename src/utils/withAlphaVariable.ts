@@ -1,7 +1,6 @@
-// @ts-nocheck
 import { formatColor, parseColor } from "./color";
 
-export function withAlphaValue(color, alphaValue, defaultValue) {
+export function withAlphaValue(color: any, alphaValue: any, defaultValue: any) {
   if (typeof color === "function") {
     return color({ opacityValue: alphaValue });
   }
@@ -15,7 +14,7 @@ export function withAlphaValue(color, alphaValue, defaultValue) {
   return formatColor({ ...parsed, alpha: alphaValue });
 }
 
-export default function withAlphaVariable({ color, property, variable }) {
+export function withAlphaVariable({ color, property, variable }: any) {
   let properties = [].concat(property);
   if (typeof color === "function") {
     return {

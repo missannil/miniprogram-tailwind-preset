@@ -1,14 +1,13 @@
-// @ts-nocheck
 import type { PluginCreator } from "tailwindcss/types/config";
-import { formatBoxShadowValue, parseBoxShadowValue } from "../../utils/parseBoxShadowValue";
-import transformThemeValue from "../../utils/transformThemeValue";
+import { formatBoxShadowValue, parseBoxShadowValue } from "../utils/parseBoxShadowValue";
+import transformThemeValue from "../utils/transformThemeValue";
 let transformValue = transformThemeValue("boxShadow");
 let defaultBoxShadow = [
   `var(--tw-ring-offset-shadow, 0 0 #0000)`,
   `var(--tw-ring-shadow, 0 0 #0000)`,
   `var(--tw-shadow)`,
 ].join(", ");
-export const boxShadowPlugin: PluginCreator = ({ matchUtilities, theme }) => {
+export const boxShadow: PluginCreator = ({ matchUtilities, theme }) => {
   matchUtilities(
     {
       shadow: (value) => {
@@ -17,10 +16,11 @@ export const boxShadowPlugin: PluginCreator = ({ matchUtilities, theme }) => {
         let ast = parseBoxShadowValue(value);
         for (let shadow of ast) {
           // Don't override color if the whole shadow is a variable
+          // @ts-ignore
           if (!shadow.valid) {
             continue;
           }
-
+          // @ts-ignore
           shadow.color = "var(--tw-shadow-color)";
         }
 
@@ -32,6 +32,7 @@ export const boxShadowPlugin: PluginCreator = ({ matchUtilities, theme }) => {
         };
       },
     },
+    // @ts-ignore
     { values: theme("boxShadow"), type: ["shadow"] },
   );
 };

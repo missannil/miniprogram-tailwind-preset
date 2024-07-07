@@ -5,8 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "prepare": "husky install",
-    "build": "tsc  -p ./tsconfig-build.json",
-    "tw": "tailwindcss  -o demo.out.wxss --watch",
+    "build": "rm -rf dist  && tsc -p ./tsconfig-build.json",
+    "dev": "tailwindcss  -o ./test/demo.out.wxss --watch",
+    "test": "tailwindcss  -o ./test/demo.out.wxss && node ./test/index.js",
     "fmt": "dprint fmt",
     "type": "tsc --watch"
   },
@@ -18,19 +19,20 @@
   ],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "tailwindcss": "^3.3.2"
-  },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.6.3",
     "commitlint": "^17.6.3",
     "husky": "^8.0.3",
-    "typescript": "^5.3.3"
+    "postcss": "^8.4.39",
+    "typescript": "^5.5.3"
   },
   "files": [
     "dist",
     "src/",
     "README.md",
     "CHANGELOG.md"
-  ]
+  ],
+  "peerDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
 }
