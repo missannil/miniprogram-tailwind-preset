@@ -1,14 +1,8 @@
-<!---------------------修改过的主题------------------->
-
 <!-- corePlugins:"width", theme:"width"-->
-<view
-	class="w-20 w-750 w-20vw w-20vh w-screen w-svw w-lvw w-dvw w-min w-max w-fit"
-></view>
+<view class="w-20 w-750 w-20vw w-20vh w-screen w-svw w-lvw w-dvw w-min w-max w-fit"></view>
 
 <!-- corePlugins:"height", theme:"height"-->
-<view
-	class="h-38 h-750 h-20vh h-screen h-svh h-lvh h-dvh h-min h-max h-fit"
-></view>
+<view class="h-38 h-750 h-20vh h-screen h-svh h-lvh h-dvh h-min h-max h-fit"></view>
 
 <!-- corePlugins:"borderWidth", theme:"borderWidth"-->
 <view class="border-10"></view>
@@ -62,12 +56,6 @@
 <view class="inset-10"></view>
 
 <!-- corePlugins:"translate" , theme:"translate"-->
-<view class="translate-x-10 snap-x  border-purple-500 shadow-sm  translate-y-20"></view>
-
-
-
-
-
-
-
-
+<view class="translate-x-10 snap-x border-purple-500 shadow-sm translate-y-20"></view>
+<!-- 3.4.4 新增 contain主题 bg-contain -->
+<view class="bg-contain overscroll-contain contain-none"></view>

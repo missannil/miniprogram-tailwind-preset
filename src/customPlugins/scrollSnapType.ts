@@ -1,5 +1,5 @@
 import type { PluginCreator } from "tailwindcss/types/config";
-export const scrollSnapTypePlugin: PluginCreator = ({ addUtilities }) => {
+export const scrollSnapType: PluginCreator = ({ addUtilities }) => {
   addUtilities({
     ".snap-none": { "scroll-snap-type": "none" },
     ".snap-x": {

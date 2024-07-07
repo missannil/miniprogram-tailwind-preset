@@ -17,7 +17,9 @@ jobs:
         run: npm install
       - name: Install dprint
         run: curl -fsSL https://dprint.dev/install.sh | sh
-      - name : test format   
+      - name : test format
         run:   npx dprint check
-      - name : test types  
-        run:   npx tsc 
+      - name : test types
+        run:   npx tsc
+      - name : test
+        run:   npm run test

@@ -1,5 +1,5 @@
 import type { PluginCreator } from "tailwindcss/types/config";
-export const borderSpacingPlugin: PluginCreator = ({ matchUtilities, theme }) => {
+export const borderSpacing: PluginCreator = ({ matchUtilities, theme }) => {
   matchUtilities(
     {
       "border-spacing": (value) => {
