@@ -1,6 +1,6 @@
 import type { PluginCreator } from "tailwindcss/types/config";
 
-export const preflightPlugin: PluginCreator = ({ addBase }) => {
+export const preflight: PluginCreator = ({ addBase }) => {
   addBase({
     page: {
       width: "100%",
@@ -13,23 +13,12 @@ export const preflightPlugin: PluginCreator = ({ addBase }) => {
       padding:
         `env(safe-area-inset-top, 0px)   env(safe-area-inset-right, 0px)  env(safe-area-inset-bottom, 0px)   env(safe-area-inset-left, 0px)`,
     },
-    "view,image,i,[class],text,::before,::after": {
+    "page,view,image,i,icon,[class],text,::before,::after": {
       "box-sizing": "border-box",
       "border-width": "0",
       "border-style": "solid",
       "border-color": "currentColor",
     },
-    // 下面插件带有默认(layer: 'defaults')会注入带有*的css,自定义没有*的css代替
-    //  backdropFilter:false,
-    //   filter:false,
-    //   ringWidth:false,
-    //   boxShadow:false,
-    //   fontVariantNumeric:false,
-    //   gradientColorStops:false,
-    //   scrollSnapType:false,
-    //   touchAction:false,
-    //   transform:false,
-    //   borderSpacing:false
     "::before,::after,::backdrop": {
       "--tw-border-spacing-x": "0",
       "--tw-border-spacing-y": "0",

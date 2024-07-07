@@ -1,4 +1,4 @@
-export default function isPlainObject(value: unknown) {
+export function isPlainObject(value: unknown) {
   if (Object.prototype.toString.call(value) !== "[object Object]") {
     return false;
   }

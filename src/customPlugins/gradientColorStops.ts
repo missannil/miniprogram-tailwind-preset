@@ -1,10 +1,10 @@
-// @ts-nocheck
 import type { PluginCreator } from "tailwindcss/types/config";
-import { flattenColorPalette } from "../../utils/flattenColorPalette";
-import { toColorValue } from "../../utils/toColorValue";
-import { withAlphaValue } from "../../utils/withAlphaVariable";
+import { flattenColorPalette } from "../utils/flattenColorPalette";
+import { toColorValue } from "../utils/toColorValue";
+import { withAlphaValue } from "../utils/withAlphaVariable";
 
-export const gradientColorStopsPlugin: PluginCreator = (() => {
+export const gradientColorStops: PluginCreator = (() => {
+  // @ts-ignore
   function transparentTo(value) {
     return withAlphaValue(value, 0, "rgb(255 255 255 / 0)");
   }
@@ -33,6 +33,7 @@ export const gradientColorStopsPlugin: PluginCreator = (() => {
           };
         },
       },
+      // @ts-ignore
       options,
     );
 
@@ -44,6 +45,7 @@ export const gradientColorStopsPlugin: PluginCreator = (() => {
           };
         },
       },
+      // @ts-ignore
       positionOptions,
     );
 
@@ -63,6 +65,7 @@ export const gradientColorStopsPlugin: PluginCreator = (() => {
           };
         },
       },
+      // @ts-ignore
       options,
     );
 
@@ -74,6 +77,7 @@ export const gradientColorStopsPlugin: PluginCreator = (() => {
           };
         },
       },
+      // @ts-ignore
       positionOptions,
     );
 
@@ -84,6 +88,7 @@ export const gradientColorStopsPlugin: PluginCreator = (() => {
           "--tw-gradient-to": `${toColorValue(value)} var(--tw-gradient-to-position)`,
         }),
       },
+      // @ts-ignore
       options,
     );
 
@@ -95,6 +100,7 @@ export const gradientColorStopsPlugin: PluginCreator = (() => {
           };
         },
       },
+      // @ts-ignore
       positionOptions,
     );
   };
