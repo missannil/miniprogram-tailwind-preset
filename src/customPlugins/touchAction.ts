@@ -1,5 +1,5 @@
 import type { PluginCreator } from "tailwindcss/types/config";
-export const touchActionPlugin: PluginCreator = ({ addUtilities }) => {
+export const touchAction: PluginCreator = ({ addUtilities }) => {
   let cssTouchActionValue = "var(--tw-pan-x) var(--tw-pan-y) var(--tw-pinch-zoom)";
 
   addUtilities({

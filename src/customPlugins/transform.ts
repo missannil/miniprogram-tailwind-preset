@@ -1,5 +1,5 @@
 import type { PluginCreator } from "tailwindcss/types/config";
-export const transformPlugin: PluginCreator = ({ addUtilities }) => {
+export const transform: PluginCreator = ({ addUtilities }) => {
   let cssTransformValue = [
     "translate(var(--tw-translate-x), var(--tw-translate-y))",
     "rotate(var(--tw-rotate))",

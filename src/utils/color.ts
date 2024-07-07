@@ -1,5 +1,4 @@
-// @ts-nocheck
-import namedColors from "./colorNames";
+import { colorNames } from "./colorNames";
 
 let HEX = /^#([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})?$/i;
 let SHORT_HEX = /^#([a-f\d])([a-f\d])([a-f\d])([a-f\d])?$/i;
@@ -17,7 +16,7 @@ let HSL = new RegExp(
 
 // In "loose" mode the color may contain fewer than 3 parts, as long as at least
 // one of the parts is variable.
-export function parseColor(value, { loose = false } = {}) {
+export function parseColor(value: any, { loose = false } = {}) {
   if (typeof value !== "string") {
     return null;
   }
@@ -27,11 +26,13 @@ export function parseColor(value, { loose = false } = {}) {
     return { mode: "rgb", color: ["0", "0", "0"], alpha: "0" };
   }
 
-  if (value in namedColors) {
-    return { mode: "rgb", color: namedColors[value].map((v) => v.toString()) };
+  if (value in colorNames) {
+    // @ts-ignore
+    return { mode: "rgb", color: colorNames[value].map((v) => v.toString()) };
   }
 
   let hex = value
+    // @ts-ignore
     .replace(SHORT_HEX, (_, r, g, b, a) => ["#", r, r, g, g, b, b, a ? a + a : ""].join(""))
     .match(HEX);
 
@@ -76,7 +77,7 @@ export function parseColor(value, { loose = false } = {}) {
   };
 }
 
-export function formatColor({ mode, color, alpha }) {
+export function formatColor({ mode, color, alpha }: any) {
   let hasAlpha = alpha !== undefined;
 
   if (mode === "rgba" || mode === "hsla") {

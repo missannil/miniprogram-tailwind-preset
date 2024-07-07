@@ -9,4 +9,5 @@ miniprogram/styles/tailwind.wxss
 !commitlint.config.js
 project.private.config.json
 !tailwind.config.full.js
+!test/index.js
 dist
