@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 import { preset } from "./src";
 export default {
-  content: ["demo.wxml"],
+  content: ["./test/demo.wxml"],
   presets: [preset],
 } satisfies Config;

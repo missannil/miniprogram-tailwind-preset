@@ -1,5 +1,5 @@
 import type { PluginCreator } from "tailwindcss/types/config";
-export const fontVariantNumericPlugin: PluginCreator = ({ addUtilities }) => {
+export const fontVariantNumeric: PluginCreator = ({ addUtilities }) => {
   let cssFontVariantNumericValue =
     "var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)";
 
