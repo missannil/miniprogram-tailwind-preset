@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.5.1...v0.6.0) (2024-07-12)
+
+
+### Features
+
+* update tailwind 3.4.4 ([be74734](https://github.com/missannil/miniprogram-tailwind-preset/commit/be747349c3c4030d006116322842c9b9cf207a22))
+
 ## [0.5.1](https://github.com/missannil/miniprogram-tailwind-preset/compare/v0.5.0...v0.5.1) (2024-01-12)
 
 
