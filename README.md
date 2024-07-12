@@ -17,12 +17,34 @@
 ```ts
 // tailwind.config.js
 // import type { Config } from "tailwindcss";
-import { preset } from "./src";
+import { preset } from "./miniprogram-tailwind-preset";
 export default {
   content: ["your/wxml/files"],
   presets: [preset],
   // ...
 }; // satisfies Config;
+```
+
+### 监控并编译
+
+```json
+// package.json
+{
+  "devDependencies": {
+    "miniprogram-tailwind-preset": "^0.6.0"
+  },
+  "scripts": {
+    "tw": "tailwindcss -o ./tailwind.out.wxss --watch"
+  }
+  // ...
+}
+```
+
+### 导入到app.wxss
+
+```css
+/* app.wxss */
+@import "./tailwind.out.wxss"
 ```
 
 ### 关闭的默认插件
