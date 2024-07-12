@@ -70,7 +70,7 @@ export default {
 
 - 任意值写法 (arbitrary values)
   类样式: w-[100rpx]
-  编译结果: .my-\[200rpx\]{ width:100rpx }
+  编译结果: .my-\[100rpx\]{ width:100rpx }
   是否报错: 是
   是否关闭: 未关闭
   测试版本库:截至3.2.5
