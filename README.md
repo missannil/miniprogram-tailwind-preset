@@ -14,7 +14,7 @@
 
 ### 配置
 
-```ts
+```js
 // tailwind.config.js
 // import type { Config } from "tailwindcss";
 import { preset } from "./miniprogram-tailwind-preset";
@@ -71,22 +71,22 @@ export default {
 
 ### 自定义主题
 
-- 见[配置文件](dist/index.js)
+- 见[配置文件](src/index.ts)
 
 ### 自定义插件
 
-- [preflight](dist/customPlugins/preflight.js)
-- [backdropFilter](dist/customPlugins/backdropFilter.js)
-- [filter](dist/customPlugins/filter.js)
-- [ringWidth](dist/customPlugins/ringWidth.js)
-- [boxShadow](dist/customPlugins/boxShadow.js)
-- [fontVariantNumeric](dist/customPlugins/fontVariantNumeric.js)
-- [gradientColorStops](dist/customPlugins/gradientColorStops.js)
-- [scrollSnapType](dist/customPlugins/scrollSnapType.js)
-- [touchAction](dist/customPlugins/touchAction.js)
-- [transform](dist/customPlugins/transform.js)
-- [borderSpacing](dist/customPlugins/borderSpacing.js)
-- [contain](dist/customPlugins/contain.js)
+- [preflight](src/customPlugins/preflight.ts)
+- [backdropFilter](src/customPlugins/backdropFilter.ts)
+- [filter](src/customPlugins/filter.ts)
+- [ringWidth](src/customPlugins/ringWidth.ts)
+- [boxShadow](src/customPlugins/boxShadow.ts)
+- [fontVariantNumeric](src/customPlugins/fontVariantNumeric.ts)
+- [gradientColorStops](src/customPlugins/gradientColorStops.ts)
+- [scrollSnapType](src/customPlugins/scrollSnapType.ts)
+- [touchAction](src/customPlugins/touchAction.ts)
+- [transform](src/customPlugins/transform.ts)
+- [borderSpacing](src/customPlugins/borderSpacing.ts)
+- [contain](src/customPlugins/contain.ts)
 
 ### 不同于原生实体类的写法
 
